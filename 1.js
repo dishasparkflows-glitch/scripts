@@ -429,7 +429,14 @@ const modules111 = [
   },
   {
     name: 'unit',
-    connectedmodule: ['itemgroup']
+    connectedmodule: ['itemgroup'],
+    relations: [
+      {
+        module: 'itemgroup',
+        localField: '_id',
+        foreignField: 'unit'
+      }
+    ]
   },
   {
     name: 'userdeviceinfo',

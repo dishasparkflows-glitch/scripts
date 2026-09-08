@@ -1,0 +1,6 @@
+{
+  "sku": {
+    "$regex": "^RJ(LR|ER|BR|PN|PM)L[12]",
+    "$options": "i"
+  }
+}

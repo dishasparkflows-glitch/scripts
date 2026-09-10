@@ -1,0 +1,226 @@
+
+Matching products in database: 193
+Selected 193 products to process.
+
+[1/193] SKU: RJBRL2-93      | "Fancy Shape Diamond Tennis Bracelet in Gold |" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[2/193] SKU: RJBRL2-94      | "Luxury Designer Tear Drop Diamond Bracelet fo" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[3/193] SKU: RJBRL2-95      | "Luxury Princess Diamond Tennis Bracelet for W" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[4/193] SKU: RJBRL2-96      | "Marquise & Round Cut Diamond Floral Link Brac" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[5/193] SKU: RJBRL2-97      | "Sparkling Round Diamond Bangle for Women | Ne" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[6/193] SKU: RJBRL2-99      | "Graduated Round Cut Diamond Chain Bracelet fo" | Media: 18 (Up:18, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[7/193] SKU: RJBRL2-100     | "Round Brilliant Cut Diamond Tennis Bracelet i" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[8/193] SKU: RJBRL2-98      | "Round Diamond Open Cuff Bangle Bracelet" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[9/193] SKU: RJERL2-58      | "Round Cut Diamond Huggie Hoop Earrings for Wo" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[10/193] SKU: RJERL2-59      | "Elegant Diamond Hoop Earrings for Women | Nei" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[11/193] SKU: RJERL2-60      | "Round Diamond Hoop Earrings | Elegant Diamond" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[12/193] SKU: RJERL2-61      | "Round Cut Diamond Earrings for Women in Gold " | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[13/193] SKU: RJERL2-62      | "Emerald & Pear Cut Diamond Toi et Moi Earring" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[14/193] SKU: RJERL2-63      | "Emerald Cut & Heart Shape Diamond Stud Earrin" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[15/193] SKU: RJLRL2-1       | "Pear Shape Diamond Wedding Band in Gold | Nei" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[16/193] SKU: RJERL2-64      | "Geometric Baguette Cut Diamond Hoop Gold Earr" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[17/193] SKU: RJERL2-65      | "Round Cut Diamond Geometric Hoop Gold Earring" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[18/193] SKU: RJERL2-66      | "Diamond Floral Hoop Earrings Cluster Bridal G" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[19/193] SKU: RJERL2-67      | "Round Cut Diamond Floral Hoop Earrings Geomet" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[20/193] SKU: RJERL2-68      | "Round Cut Diamond Huggie Hoop Gold Earrings |" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[21/193] SKU: RJERL2-69      | "Marquise Cut Diamond Drop Gold Minimalist Ear" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[22/193] SKU: RJERL2-70      | "Round Cut Diamond Triangle Bar Hoop Gold Earr" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[23/193] SKU: RJLRL2-2       | "Oval Cut Diamond Wedding Band in Gold | Neira" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[24/193] SKU: RJLRL2-57      | "Round Cut Diamond Cluster Engagement Ring | N" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[25/193] SKU: RJERL2-71      | "Round Cut Sparkling Diamond Link Classic Earr" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[26/193] SKU: RJLRL2-3       | "Pear & Round Cut Diamond Halo Engagement Ring" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[27/193] SKU: RJLRL2-56      | "Round Cut  & Marquise Diamond Engagement Ring" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[28/193] SKU: RJERL2-72      | "Round Cut Diamond Two Pave Hoop Earrings | Ne" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[29/193] SKU: RJLRL2-4       | "Round Cut Diamond Cluster Engagement Ring wit" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[30/193] SKU: RJERL2-73      | "Round Cut Diamond Bezel Huggie Hoop Gold Earr" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[31/193] SKU: RJLRL2-5       | "Round Cut Diamond Engagement Ring with Micro " | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[32/193] SKU: RJLRL2-55      | "Round Cut Diamond Cluster Engagement Ring | N" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[33/193] SKU: RJERL2-74      | "Round Cut Channel Set Classic Gold Hoop Earri" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[34/193] SKU: RJLRL2-6       | "Round Cut Diamond Halo Engagement Ring with D" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[35/193] SKU: RJLRL2-54      | "Oval Cut Diamond Solitaire Ring | Neirah Jewe" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[36/193] SKU: RJLRL2-7       | "Round Cut Diamond Halo Bridal Ring Set with P" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[37/193] SKU: RJLRL2-53      | "Round Cut Diamond Solitaire Ring | Neirah Jew" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[38/193] SKU: RJLRL2-8       | "Round Diamond Double Pavé Band Engagement Rin" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[39/193] SKU: RJLRL2-52      | "Emerald Cut Diamond Solitaire Ring | Neirah J" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[40/193] SKU: RJERL2-75      | "Marquise Cut Diamond Twist Hoop Gold Earrings" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[41/193] SKU: RJLRL2-9       | "Baguette Cut Diamond Band Ring in Gold | Neir" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[42/193] SKU: RJERL2-76      | "Round Diamond Channel Set Huggie Hoop Gold Ea" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[43/193] SKU: RJLRL2-51      | "Round Cut Diamond Solitaire Engagement Ring |" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[44/193] SKU: RJERL2-77      | "Round Cut Diamond Statement Huggie Hoop Gold " | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[45/193] SKU: RJLRL2-50      | "Marquise Cut Diamond Solitaire Ring | Neirah " | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[46/193] SKU: RJLRL2-11      | "Round Cut Double Halo Diamond Engagement Ring" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[47/193] SKU: RJLRL2-10      | "Princess Cut Diamond Engagement Ring with Dou" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[48/193] SKU: RJERL2-78      | "Round & Baguette Diamond Halo Huggie Hoop Gol" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[49/193] SKU: RJLRL2-49      | "Round Cut Diamond Solitaire Ring | Neirah Jew" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[50/193] SKU: RJERL2-79      | "Diamond Mixed Cut Geometric Cluster Hoop Gold" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[51/193] SKU: RJERL2-80      | "Round Cut Diamond Gold Heart Drop Hoop Earrin" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[52/193] SKU: RJLRL2-48      | "Round Cut Diamond Solitaire Ring | Neirah Jew" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[53/193] SKU: RJLRL2-47      | "Oval Cut Diamond Engagement Ring with Double " | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[54/193] SKU: RJERL2-81      | "Round Cut Diamond Bar Set Huggie Hoop Gold Ea" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[55/193] SKU: RJERL2-82      | "Round Diamond Pavé Edge Twisted Huggie Hoop E" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[56/193] SKU: RJERL2-83      | "Baguette Cut Diamond Geometric Huggie Hoop Go" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[57/193] SKU: RJLRL2-45      | "Round Cut Diamond Floral Halo Engagement Ring" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[58/193] SKU: RJERL2-84      | "Heart Cut Diamond Loop Set Huggie Hoop Earrin" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[59/193] SKU: RJLRL2-12      | "Round Cut Diamond Engagement Ring with Wide M" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[60/193] SKU: RJLRL2-14      | "Emerald Cut Diamond Halo Engagement Ring with" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[61/193] SKU: RJLRL2-15      | "Round Cut Diamond Engagement Ring with Marqui" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[62/193] SKU: RJLRL2-16      | "Round Cut Diamond Solitaire Engagement Ring i" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[63/193] SKU: RJLRL2-18      | "Cushion Cut Diamond with Trillion Side Stones" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[64/193] SKU: RJLRL2-17      | "Cushion Cut Diamond Three Stone Engagement Ri" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[65/193] SKU: RJLRL2-19      | "Pear Cut Diamond Three Stone Engagement Ring " | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[66/193] SKU: RJLRL2-20      | "Princess Cut Diamond Split Shank Engagement R" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[67/193] SKU: RJLRL2-22      | "Radiant Cut Diamond Three Stone Engagement Ri" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[68/193] SKU: RJLRL2-21      | "Round Cut Diamond Three Stone Engagement Ring" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[69/193] SKU: RJLRL2-24      | "Round Cut Three Stone Diamond Engagement Ring" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[70/193] SKU: RJLRL2-23      | "Pear Cut Diamond Engagement Ring with Pavé Di" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[71/193] SKU: RJLRL2-25      | "Round Cut Diamond Three Stone Engagement Ring" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[72/193] SKU: RJLRL2-26      | "Cushion Cut Diamond Halo Engagement Ring with" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[73/193] SKU: RJLRL2-27      | "Princess Cut Diamond Three Stone Engagement R" | Media: 18 (Up:18, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[74/193] SKU: RJLRL2-28      | "Emerald Cut Diamond Three Stone Engagement Ri" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[75/193] SKU: RJLRL2-29      | "Emerald Cut Diamond Engagement Ring with Pavé" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[76/193] SKU: RJLRL2-30      | "Multi Row Round Diamond Band Ring with Triple" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[77/193] SKU: RJLRL2-31      | "Round Diamond Half Eternity Band Ring with Pa" | Media: 18 (Up:18, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[78/193] SKU: RJLRL2-33      | "Round Cut Diamond Solitaire Engagement Ring w" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[79/193] SKU: RJLRL2-32      | "Round Cut Diamond Vintage Rope Twist Engageme" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[80/193] SKU: RJLRL2-34      | "Princess Cut Diamond Solitaire Ring with Cros" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[81/193] SKU: RJLRL2-35      | "Princess Cut Diamond Solitaire Engagement Rin" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[82/193] SKU: RJERL2-85      | "Geometric Emerald Cut Diamond Drop Gold Earri" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[83/193] SKU: RJLRL2-36      | "Princess Cut Diamond Solitaire Engagement Rin" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[84/193] SKU: RJERL2-86      | "Marquise Cut Diamond Curved Hoop Gold Earring" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[85/193] SKU: RJLRL2-37      | "Round Cut Diamond Solitaire Ring with Sleek G" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[86/193] SKU: RJERL2-87      | "Round Cut Diamond Drop Geometric Bar Gold Ear" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[87/193] SKU: RJERL2-88      | "Mixed Cut Diamond Connected Drop Gold Earring" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[88/193] SKU: RJERL2-89      | "Geometric Princess Cut Drop Earrings | Elegan" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[89/193] SKU: RJERL2-90      | "Oval & Emerald Diamond Cut Drop Dangle Gold E" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[90/193] SKU: RJERL2-91      | "Round & Baguette Cut Diamond Oval Hoop Drop S" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[91/193] SKU: RJERL2-92      | "Pear & Round Cut Diamond Floral Cluster Hoop " | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[92/193] SKU: RJLRL2-38      | "Round Cut Diamond Engagement Ring with Side D" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[93/193] SKU: RJLRL2-39      | "Oval Cut Diamond Engagement Ring with Round A" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[94/193] SKU: RJLRL2-40      | "Princess Cut Diamond Halo Engagement Ring | N" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[95/193] SKU: RJLRL2-43      | "Oval Cut Diamond Engagement Ring with Round D" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[96/193] SKU: RJERL1-69      | "Round Cut Diamond Floral Cluster Stud Earring" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[97/193] SKU: RJLRL2-42      | "Pear Shaped Diamond Ring with Elegant Diamond" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[98/193] SKU: RJERL1-89      | "Round Cut Diamond Floral Stud Earrings with S" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[99/193] SKU: RJERL1-70      | "Round Cut Diamond Stud Earrings in Gold | Nei" | Media: 18 (Up:18, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[100/193] SKU: RJLRL2-41      | "Round Cut Diamond Engagement Ring with Sparkl" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[101/193] SKU: RJERL1-88      | "Round Cut Diamond Square Stud Earrings Gold S" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[102/193] SKU: RJERL1-71      | "Pear Cut Diamond Stud Earrings in Gold | Neir" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[103/193] SKU: RJERL1-87      | "Round Cut Diamond Geometric Stud Earrings wit" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[104/193] SKU: RJERL1-73      | "Triangle Cut Diamond Stud Earrings in Gold | " | Media: 18 (Up:18, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[105/193] SKU: RJERL1-85      | "Round Cut Diamond Halo Stud Earrings with Dou" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[106/193] SKU: RJERL1-86      | "Round Cut Diamond Stud Earrings with Twisted " | Media: 18 (Up:18, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[107/193] SKU: RJERL1-74      | "Heart Cut Diamond Stud Earrings in Gold | Nei" | Media: 18 (Up:18, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[108/193] SKU: RJERL1-75      | "Emerald Cut Diamond Stud Earrings in Gold | N" | Media: 18 (Up:18, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[109/193] SKU: RJERL1-76      | "Classic Round Cut Diamond Halo Stud Earrings " | Media: 18 (Up:18, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[110/193] SKU: RJERL1-83      | "Round Cut Diamond Halo Stud Earrings in Gold " | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[111/193] SKU: RJERL1-77      | "Round Cut Diamond Geometric Stud Earrings in " | Media: 18 (Up:18, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[112/193] SKU: RJERL1-82      | "Round Cut Diamond Square Halo Stud Earrings i" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[113/193] SKU: RJERL1-78      | "Round Cut Diamond Double Halo Stud Earrings i" | Media: 18 (Up:18, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[114/193] SKU: RJERL1-81      | "Round Cut Diamond Hexagon Halo Stud Earrings " | Media: 18 (Up:18, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[115/193] SKU: RJERL1-79      | "Round Cut Diamond Geometric Drop Stud Earring" | Media: 18 (Up:18, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[116/193] SKU: RJERL1-80      | "Round Cut Diamond Stud Earrings with Six-Pron" | Media: 18 (Up:18, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[117/193] SKU: RJLRL1-20#10002L | "Oval Cut Diamond Ring with Marquise Accents |" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[118/193] SKU: RJLRL1-0208    | "Round Cut Diamond Halo Engagement Ring with T" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[119/193] SKU: RJLRL1-0206    | "Round Cut Diamond Halo Ring with Baguette Acc" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[120/193] SKU: RJLRL1-0176    | "Round Cut Diamond Halo Engagement Ring with D" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[121/193] SKU: RJLRL1-0175    | "Oval Cut Diamond Halo Engagement Ring with Di" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[122/193] SKU: RJLRL1-0001    | "Round Cut Diamond Solitaire Engagement Ring w" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[123/193] SKU: RJLRL1-0173    | "Pear Cut Diamond Pavé Engagement Ring with Go" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[124/193] SKU: RJLRL1-0002    | "Round Cut Diamond Solitaire Ring with Gold Sh" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[125/193] SKU: RJLRL1-0172    | "Emerald Cut Diamond Hidden Halo Engagement Ri" | Media: 18 (Up:18, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[126/193] SKU: RJLRL1-0174    | "Pear Cut Diamond Halo Engagement Ring with Go" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[127/193] SKU: RJLRL1-0004    | "Round Cut Diamond Solitaire Ring with Sleek G" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[128/193] SKU: RJLRL1-0171    | "Round Cut Diamond Hidden Halo Engagement Ring" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[129/193] SKU: RJPNL1-90      | "Aurelia Princess Cut Diamond Pendant Necklace" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[130/193] SKU: RJLRL1-0005    | "Round Cut Diamond Solitaire Ring with Double-" | Media: 18 (Up:18, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[131/193] SKU: RJLRL1-0154    | "Round Cut Diamond Solitaire Engagement Ring w" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[132/193] SKU: RJLRL1-0113    | "Round Cut Diamond Pavé Band Ring with Gold Se" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[133/193] SKU: RJLRL1-0112    | "Round Cut Diamond Twisted Shoulder Ring with " | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[134/193] SKU: RJLRL1-0006    | "Round Cut Diamond Solitaire Ring with Sculpte" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[135/193] SKU: RJLRL1-0111    | "Round Cut Diamond Bezel Set Ring with Gold Ba" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[136/193] SKU: RJPNL1-91      | "Celeste Baguette Diamond Pendant Necklace | E" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[137/193] SKU: RJLRL1-0007    | "Round Cut Diamond Solitaire Ring with Ornate " | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[138/193] SKU: RJPNL1-92      | "Triangle Cut Diamond Pendant for Women, Elega" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[139/193] SKU: RJLRL1-0008    | "Round Cut Diamond Solitaire Ring with Bold Go" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[140/193] SKU: RJLRL1-0097    | "Round Cut Diamond Lattice Design Gold Band Ri" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[141/193] SKU: RJLRL1-0009    | "Round Cut Diamond Solitaire Ring with Split G" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[142/193] SKU: RJLRL1-0096    | "Round Cut Diamond Halo Ring with Sculpted Spl" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[143/193] SKU: RJLRL1-0010    | "Round Cut Diamond Solitaire Ring with Heart-S" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[144/193] SKU: RJLRL1-0094    | "Round Cut Diamond Ring with Double Pavé Side " | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[145/193] SKU: RJLRL1-0011    | "Round Cut Diamond Solitaire Ring with Twisted" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[146/193] SKU: RJLRL1-0090    | "Round Cut Diamond Ring with Sculpted Crossove" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[147/193] SKU: RJLRL1-0012    | "Round Cut Diamond Solitaire Ring with Twisted" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[148/193] SKU: RJLRL1-0095    | "Round Cut Diamond Heart Halo Ring with Pavé B" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[149/193] SKU: RJLRL1-0071    | "Pear Cut Diamond Ring with Pavé Halo and Diam" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[150/193] SKU: RJLRL1-0013    | "Round Cut Diamond Solitaire Engagement Ring |" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[151/193] SKU: RJLRL1-0069    | "Emerald Cut Diamond Ring and Pavé Diamond Ban" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[152/193] SKU: RJLRL1-0015    | "Round Cut Diamond Solitaire Ring with Beaded " | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[153/193] SKU: RJPNL1-93      | "Elara Diamond Open Pendant Necklace for Women" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[154/193] SKU: RJLRL1-0016    | "Round Cut Diamond Solitaire Ring with Beaded " | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[155/193] SKU: RJLRL1-0058    | "Emerald Cut Halo Pavé Diamond Engagement Ring" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[156/193] SKU: RJPNL1-94      | "Seraphina Diamond Halo Pendant for Women, Ele" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[157/193] SKU: RJLRL1-0057    | "Princess Cut Pave Diamond Engagement Ring in " | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[158/193] SKU: RJPNL1-95      | "Lunara Curved Diamond Pendant Necklace for Wo" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[159/193] SKU: RJPNL1-96      | "Heart Diamond Pendant Necklace for Women | Ne" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[160/193] SKU: RJPML1-97      | "Starburst Diamond Pendant Necklace for Women " | Media: 18 (Up:18, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[161/193] SKU: RJLRL1-0054    | "Oval Cut Diamond Three Stone Engagement Ring " | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[162/193] SKU: RJLRL1-0055    | "Pear & Emerald Cut Diamond Toi et Moi Ring in" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[163/193] SKU: RJPNL1-98      | "Round Diamond Pendant Necklace with Prong Set" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[164/193] SKU: RJLRL1-0052    | "Emerald Cut Diamond Ring with Baguette Accent" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[165/193] SKU: RJPNL1-99      | "Round Halo Diamond Pendant Necklace with Diam" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[166/193] SKU: RJLRL1-0018    | "Round Cut Diamond Solitaire Ring with Sculpte" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[167/193] SKU: RJLRL1-0051    | "Round Cut Diamond Hidden Halo Engagement Ring" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[168/193] SKU: RJLRL1-0050    | "Oval Cut Diamond Halo Pavé Engagement Ring in" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+  [FAILED] Transfer failed for https://pub-1498cfa46a374e5b8c8bf98b71c05f84.r2.dev/Rare_Jewellers/admin/Products/1787052959291-LR-0048_W-_viwe4.png: HTTP 404 Not Found
+  [FAILED] Transfer failed for https://pub-1498cfa46a374e5b8c8bf98b71c05f84.r2.dev/Rare_Jewellers/admin/Products/1787052959305-LR-0048-01_W-_viwe1.png: HTTP 404 Not Found
+  [FAILED] Transfer failed for https://pub-1498cfa46a374e5b8c8bf98b71c05f84.r2.dev/Rare_Jewellers/admin/Products/1787052959299-LR-0048-01_W-_viwe2.png: HTTP 404 Not Found
+  [FAILED] Transfer failed for https://pub-1498cfa46a374e5b8c8bf98b71c05f84.r2.dev/Rare_Jewellers/admin/Products/1787052959396-LR-0048_W-_viwe5.mp4: HTTP 404 Not Found
+  [FAILED] Transfer failed for https://pub-1498cfa46a374e5b8c8bf98b71c05f84.r2.dev/Rare_Jewellers/admin/Products/1787052465272-LR-0048_R-_viwe4.png: HTTP 404 Not Found
+  [FAILED] Transfer failed for https://pub-1498cfa46a374e5b8c8bf98b71c05f84.r2.dev/Rare_Jewellers/admin/Products/1787052465273-LR-0048_R-_viwe3.png: HTTP 404 Not Found
+  [FAILED] Transfer failed for https://pub-1498cfa46a374e5b8c8bf98b71c05f84.r2.dev/Rare_Jewellers/admin/Products/1787052959293-LR-0048_W-_viwe3.png: HTTP 404 Not Found
+  [FAILED] Transfer failed for https://pub-1498cfa46a374e5b8c8bf98b71c05f84.r2.dev/Rare_Jewellers/admin/Products/1787052465281-LR-0048-01_R-_viwe2.png: HTTP 404 Not Found
+  [FAILED] Transfer failed for https://pub-1498cfa46a374e5b8c8bf98b71c05f84.r2.dev/Rare_Jewellers/admin/Products/1787052465288-LR-0048-01_R-_viwe1.png: HTTP 404 Not Found
+  [FAILED] Transfer failed for https://pub-1498cfa46a374e5b8c8bf98b71c05f84.r2.dev/Rare_Jewellers/admin/Products/1787052465296-LR-0048_R-_viwe5.mp4: HTTP 404 Not Found
+  [FAILED] Transfer failed for https://pub-1498cfa46a374e5b8c8bf98b71c05f84.r2.dev/Rare_Jewellers/admin/Products/1787052465592-LR-0048_Y-_viwe4.png: HTTP 404 Not Found
+  [FAILED] Transfer failed for https://pub-1498cfa46a374e5b8c8bf98b71c05f84.r2.dev/Rare_Jewellers/admin/Products/1787052465600-LR-0048-01_Y-_viwe2.png: HTTP 404 Not Found
+  [FAILED] Transfer failed for https://pub-1498cfa46a374e5b8c8bf98b71c05f84.r2.dev/Rare_Jewellers/admin/Products/1787052465594-LR-0048_Y-_viwe3.png: HTTP 404 Not Found
+  [FAILED] Transfer failed for https://pub-1498cfa46a374e5b8c8bf98b71c05f84.r2.dev/Rare_Jewellers/admin/Products/1787052465608-LR-0048-01_Y-_viwe1.png: HTTP 404 Not Found
+  [FAILED] Transfer failed for https://pub-1498cfa46a374e5b8c8bf98b71c05f84.r2.dev/Rare_Jewellers/admin/Products/1787052465736-LR-0048_Y-_viwe5.mp4: HTTP 404 Not Found
+[169/193] SKU: RJLRL1-0048    | "Round Cut Diamond Three Stone Engagement Ring" | Media: 18 (Up:3, Cache:0, Skip:0, Fail:15) -> DB UPDATED
+[170/193] SKU: RJLRL1-0046    | "Princess Cut Diamond Ring with Baguette Accen" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[171/193] SKU: RJLRL1-0044    | "Round Diamond Solitaire Ring with Textured Go" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[172/193] SKU: RJLRL1-0019    | "Round Diamond Solitaire Ring with Sculpted Ba" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[173/193] SKU: RJLRL1-0042    | "Emerald Cut Diamond Eternity Band in Gold | N" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[174/193] SKU: RJLRL1-0020    | "Round Diamond Solitaire Ring with Classic Pro" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[175/193] SKU: RJLRL1-0040    | "Round Brilliant Cut Diamond Eternity Band in " | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[176/193] SKU: RJLRL1-0021    | "Round Diamond Solitaire Twist Crossover Ring " | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[177/193] SKU: RJLRL1-0003    | "Round Diamond Classic Solitaire Ring | Neirah" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[178/193] SKU: RJLRL1-0022    | "Round Diamond Solitaire Ring with Sculpted Go" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[179/193] SKU: RJLRL1-0023    | "Round Diamond Solitaire Ring with Crossover S" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[180/193] SKU: RJLRL1-0024    | "Round Diamond Solitaire Ring with Beaded Doub" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[181/193] SKU: RJLRL1-0026    | "Round Diamond Solitaire Ring with Twisted Rop" | Media: 18 (Up:18, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[182/193] SKU: RJLRL1-0028    | "Round Diamond Solitaire Ring with Beaded Edge" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[183/193] SKU: RJLRL1-0029    | "Round Diamond Three-Stone Ring with Ornate Go" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[184/193] SKU: RJLRL1-0030    | "Princess Cut Three-Stone Diamond Ring with Sc" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[185/193] SKU: RJLRL1-0031    | "Oval Diamond Three-Stone Ring with Sculpted M" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[186/193] SKU: RJLRL1-0032    | "Asscher Cut Diamond Halo Ring with Three-Ston" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[187/193] SKU: RJLRL1-0033    | "Round Diamond Three-Stone Ring with Cushion S" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[188/193] SKU: RJLRL1-0034    | "Emerald Cut Three-Stone Diamond Ring with Scu" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[189/193] SKU: RJLRL1-0035    | "Round Diamond Solitaire Ring With Half Diamon" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[190/193] SKU: RJLRL1-0036    | "Round Diamond Solitaire Ring with Multi-Band " | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[191/193] SKU: RJLRL1-0037    | "Round Diamond Solitaire Ring with Sculpted Go" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[192/193] SKU: RJLRL1-0038    | "Round Diamond Solitaire Ring with Pavé Diamon" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+[193/193] SKU: RJLRL1-0039    | "Round Diamond Engagement Ring with Diamond Ac" | Media: 21 (Up:21, Cache:0, Skip:0, Fail:0) -> DB UPDATED
+
+===========================================================================
+                          MIGRATION SUMMARY
+===========================================================================
+Total Products Scanned:    193
+Products Updated in DB:    193
+Products Already UpToDate: 0
+Total Media Processed:     3996
+New Files Uploaded to R2:  3981
+Files Loaded from Cache:   0
+Files Already Migrated:    0
+Files Failed:              15
+Total Execution Time:      10225.9s (0.4 items/sec)
+===========================================================================

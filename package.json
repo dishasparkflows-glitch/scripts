@@ -11,7 +11,10 @@
   "description": "",
   "main": "1.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate:categories": "node neirah/migrate_categories_r2.js",
+    "migrate:featureds": "node neirah/migrate_featureds_r2.js",
+    "migrate:products": "node neirah/migrate_products_r2.js"
   },
   "keywords": [],
   "author": "",

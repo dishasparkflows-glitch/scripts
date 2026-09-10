@@ -16,7 +16,7 @@ if (fs.existsSync(localEnvPath)) {
   dotenv.config();
 }
 
-// 2. Configuration with fallbacks
+// 2. Configuration with fallbacks to provided credentials
 const accountId =
   process.env.CLOUDFLARE_R2_ACCOUNT_ID ||
   process.env.CLOUDFLARE_ACCOUNT_ID ||
@@ -54,9 +54,8 @@ const mongoUri =
   'mongodb+srv://neirah:2Hli7juqhwV4reaK@neirah.k3zhzfu.mongodb.net/neirah?retryWrites=true&w=majority';
 
 const collectionName =
-  process.env.MONGODB_PRODUCTS_COLLECTION ||
-  process.env.MONGODB_COLLECTION_PRODUCTS ||
-  'products';
+  process.env.MONGODB_COLLECTION ||
+  'categories';
 
 const CONFIG = {
   accountId,
@@ -67,8 +66,7 @@ const CONFIG = {
   endpoint,
   mongoUri,
   collectionName,
-  cacheFilePath: path.join(__dirname, 'product_migration_cache.json'),
-  defaultConcurrency: 8,
+  cacheFilePath: path.join(__dirname, 'category_migration_cache.json'),
   maxRetries: 3,
 };
 
@@ -107,6 +105,7 @@ function inferContentType(filename, headerType) {
 function deriveNewKey(oldPublicId, oldUrl) {
   let relativeKey = oldPublicId;
 
+  // Extract from URL if public_id missing or needs extension
   if (!relativeKey && oldUrl) {
     try {
       const u = new URL(oldUrl);
@@ -116,6 +115,7 @@ function deriveNewKey(oldPublicId, oldUrl) {
     }
   }
 
+  // If public_id has no file extension but URL does, preserve the extension
   if (oldUrl && path.extname(relativeKey) === '') {
     try {
       const u = new URL(oldUrl);
@@ -132,7 +132,7 @@ function deriveNewKey(oldPublicId, oldUrl) {
     throw new Error(`Unable to derive key for URL: ${oldUrl}`);
   }
 
-  // Replace legacy prefix "Rare_Jewellers/" with "Neirah_Jewellers/"
+  // Replace legacy organization prefix "Rare_Jewellers/" with "Neirah_Jewellers/"
   let newKey = relativeKey.replace(/^Rare_Jewellers\//i, 'Neirah_Jewellers/');
   if (!newKey.startsWith('Neirah_Jewellers/')) {
     newKey = `Neirah_Jewellers/${newKey.replace(/^\/+/, '')}`;
@@ -181,12 +181,12 @@ async function transferMedia(oldUrl, oldPublicId, cache, isDryRun, force = false
     attempt++;
     try {
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 60000); // 60s timeout for large media/videos
+      const timeoutId = setTimeout(() => controller.abort(), 45000); // 45s timeout
 
       const response = await fetch(oldUrl, {
         signal: controller.signal,
         headers: {
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) ProductMediaMigration/1.0',
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) MediaMigration/1.0',
         },
       });
       clearTimeout(timeoutId);
@@ -220,6 +220,7 @@ async function transferMedia(oldUrl, oldPublicId, cache, isDryRun, force = false
       lastError = err;
       if (attempt < CONFIG.maxRetries) {
         const waitTime = Math.pow(2, attempt) * 600;
+        console.warn(`  [Retry ${attempt}/${CONFIG.maxRetries}] for ${oldUrl}: ${err.message}. Retrying in ${waitTime}ms...`);
         await sleep(waitTime);
       }
     }
@@ -229,62 +230,26 @@ async function transferMedia(oldUrl, oldPublicId, cache, isDryRun, force = false
   return null;
 }
 
-// 7. Bounded Concurrency Task Runner
-async function runWithConcurrency(tasks, limit) {
-  const results = [];
-  let index = 0;
-
-  async function worker() {
-    while (index < tasks.length) {
-      const cur = index++;
-      results[cur] = await tasks[cur]();
-    }
-  }
-
-  const workers = Array.from({ length: Math.min(limit, tasks.length) }, () => worker());
-  await Promise.all(workers);
-  return results;
-}
-
-// 8. Main Runner
+// 7. Main Runner
 async function main() {
   const args = process.argv.slice(2);
   const isDryRun = args.includes('--dry-run');
   const isForce = args.includes('--force');
 
-  let limit = Infinity;
-  let skip = 0;
-  let targetSku = null;
-  let concurrency = CONFIG.defaultConcurrency;
-
-  for (let i = 0; i < args.length; i++) {
-    if (args[i] === '--limit' && args[i + 1]) {
-      limit = parseInt(args[++i], 10);
-    } else if (args[i] === '--skip' && args[i + 1]) {
-      skip = parseInt(args[++i], 10);
-    } else if (args[i] === '--sku' && args[i + 1]) {
-      targetSku = args[++i].trim();
-    } else if (args[i] === '--concurrency' && args[i + 1]) {
-      concurrency = parseInt(args[++i], 10);
-    } else if (args[i] === '--help' || args[i] === '-h') {
-      console.log(`
-Usage: node migrate_products_r2.js [options]
+  if (args.includes('--help') || args.includes('-h')) {
+    console.log(`
+Usage: node migrate_categories_r2.js [options]
 
 Options:
-  --dry-run          Preview actions without uploading files or updating database
-  --limit <number>   Process only the specified number of products
-  --skip <number>    Skip the first N products
-  --sku <sku>        Migrate only a specific product by SKU
-  --concurrency <N>  Number of parallel file transfers (default: ${CONFIG.defaultConcurrency})
-  --force            Force re-upload even if URL already matches new Cloudflare URL
-  --help, -h         Show this help message
+  --dry-run      Preview actions without uploading files or updating database
+  --force        Force re-upload even if URL already matches new Cloudflare URL
+  --help, -h     Show this help message
 `);
-      process.exit(0);
-    }
+    process.exit(0);
   }
 
   console.log('='.repeat(75));
-  console.log('           NEIRAH PRODUCTS -> CLOUDFLARE R2 MIGRATION SCRIPT        ');
+  console.log('         NEIRAH CATEGORIES -> CLOUDFLARE R2 MIGRATION SCRIPT        ');
   console.log('='.repeat(75));
   console.log(`MongoDB URI:          ${CONFIG.mongoUri.replace(/:([^@]+)@/, ':****@')}`);
   console.log(`MongoDB Collection:   ${CONFIG.collectionName}`);
@@ -292,12 +257,8 @@ Options:
   console.log(`Cloudflare Bucket:    ${CONFIG.bucketName}`);
   console.log(`Cloudflare Public URL:${CONFIG.publicUrl}`);
   console.log(`Cloudflare Endpoint:  ${CONFIG.endpoint}`);
-  console.log(`Concurrency Limit:    ${concurrency}`);
   console.log(`Dry Run Mode:         ${isDryRun ? 'YES (No writes)' : 'NO (Live Upload & DB Update)'}`);
   console.log(`Force Re-upload:      ${isForce ? 'YES' : 'NO'}`);
-  if (targetSku) console.log(`Filter by SKU:        ${targetSku}`);
-  if (limit !== Infinity) console.log(`Limit:                ${limit} products`);
-  if (skip > 0) console.log(`Skip:                 ${skip} products`);
   console.log('='.repeat(75));
 
   // Load migration cache
@@ -311,12 +272,10 @@ Options:
     }
   }
 
-  let unsavedOps = 0;
-  const saveCache = (force = false) => {
-    if (!isDryRun && (force || unsavedOps >= 5)) {
+  const saveCache = () => {
+    if (!isDryRun) {
       try {
         fs.writeFileSync(CONFIG.cacheFilePath, JSON.stringify(cache, null, 2), 'utf8');
-        unsavedOps = 0;
       } catch (err) {
         console.warn('Failed to save cache file:', err.message);
       }
@@ -329,22 +288,12 @@ Options:
   console.log('MongoDB connected successfully.\n');
 
   const db = mongoose.connection.db;
-  const col = db.collection(CONFIG.collectionName);
+  const categoriesCol = db.collection(CONFIG.collectionName);
 
-  const query = targetSku ? { sku: targetSku } : {};
-  const totalCount = await col.countDocuments(query);
-  console.log(`Matching products in database: ${totalCount}`);
+  const categories = await categoriesCol.find({}).toArray();
+  console.log(`Found ${categories.length} category records in database.\n`);
 
-  let cursor = col.find(query).sort({ _id: 1 });
-  if (skip > 0) cursor = cursor.skip(skip);
-  if (limit !== Infinity) cursor = cursor.limit(limit);
-
-  const products = await cursor.toArray();
-  console.log(`Selected ${products.length} products to process.\n`);
-
-  let totalProductsUpdated = 0;
-  let totalProductsSkipped = 0;
-  let totalMediaProcessed = 0;
+  let totalCategoriesUpdated = 0;
   let totalMediaUploaded = 0;
   let totalMediaCached = 0;
   let totalMediaSkipped = 0;
@@ -352,138 +301,145 @@ Options:
 
   const startTime = Date.now();
 
-  for (let idx = 0; idx < products.length; idx++) {
-    const product = products[idx];
-    const itemNum = skip + idx + 1;
-    const sku = product.sku || 'NO-SKU';
-    const title = (product.title || '').slice(0, 45);
+  for (let idx = 0; idx < categories.length; idx++) {
+    const cat = categories[idx];
+    const catNum = idx + 1;
+    console.log(`---------------------------------------------------------------------------`);
+    console.log(`[${catNum}/${categories.length}] Processing Category: "${cat.name}" (ID: ${cat._id})`);
 
-    const mediaTasks = [];
     let hasChanges = false;
-    let prodUploaded = 0;
-    let prodCached = 0;
-    let prodSkipped = 0;
-    let prodFailed = 0;
 
-    if (product.colorImages && Array.isArray(product.colorImages)) {
-      for (const ci of product.colorImages) {
-        // Images array
-        if (ci.images && Array.isArray(ci.images)) {
-          for (const img of ci.images) {
-            if (img && img.url) {
-              mediaTasks.push(async () => {
-                totalMediaProcessed++;
-                const result = await transferMedia(img.url, img.public_id, cache, isDryRun, isForce);
-                if (result) {
-                  if (result.uploaded) {
-                    totalMediaUploaded++;
-                    prodUploaded++;
-                    unsavedOps++;
-                  } else if (result.fromCache) {
-                    totalMediaCached++;
-                    prodCached++;
-                  } else if (result.alreadyMigrated) {
-                    totalMediaSkipped++;
-                    prodSkipped++;
-                  }
+    // 1. Process `images` array
+    if (cat.images && Array.isArray(cat.images) && cat.images.length > 0) {
+      for (let i = 0; i < cat.images.length; i++) {
+        const img = cat.images[i];
+        if (!img || !img.url) continue;
 
-                  if (img.url !== result.url || img.public_id !== result.public_id) {
-                    img.url = result.url;
-                    img.public_id = result.public_id;
-                    hasChanges = true;
-                  }
-                } else {
-                  totalMediaFailed++;
-                  prodFailed++;
-                }
-              });
+        console.log(`  -> Image [${i + 1}/${cat.images.length}] ("${img.title || 'Untitled'}"): ${img.url}`);
+        const result = await transferMedia(img.url, img.public_id, cache, isDryRun, isForce);
+
+        if (result) {
+          if (result.uploaded) totalMediaUploaded++;
+          else if (result.fromCache) totalMediaCached++;
+          else if (result.alreadyMigrated) totalMediaSkipped++;
+
+          if (img.url !== result.url || img.public_id !== result.public_id) {
+            console.log(`     Updated: [${result.public_id}]`);
+            img.url = result.url;
+            img.public_id = result.public_id;
+            hasChanges = true;
+          } else {
+            console.log(`     Already up to date.`);
+          }
+        } else {
+          totalMediaFailed++;
+          console.warn(`     Retaining original URL due to transfer error.`);
+        }
+      }
+    }
+
+    // 2. Process root `sizeChart`
+    if (cat.sizeChart && cat.sizeChart.url) {
+      console.log(`  -> Category SizeChart: ${cat.sizeChart.url}`);
+      const result = await transferMedia(cat.sizeChart.url, cat.sizeChart.public_id, cache, isDryRun, isForce);
+
+      if (result) {
+        if (result.uploaded) totalMediaUploaded++;
+        else if (result.fromCache) totalMediaCached++;
+        else if (result.alreadyMigrated) totalMediaSkipped++;
+
+        if (cat.sizeChart.url !== result.url || cat.sizeChart.public_id !== result.public_id) {
+          console.log(`     Updated: [${result.public_id}]`);
+          cat.sizeChart.url = result.url;
+          cat.sizeChart.public_id = result.public_id;
+          hasChanges = true;
+        } else {
+          console.log(`     Already up to date.`);
+        }
+      } else {
+        totalMediaFailed++;
+        console.warn(`     Retaining original SizeChart URL due to transfer error.`);
+      }
+    }
+
+    // 3. Process `subTypes` sizeChart
+    if (cat.subTypes && Array.isArray(cat.subTypes) && cat.subTypes.length > 0) {
+      for (let s = 0; s < cat.subTypes.length; s++) {
+        const sub = cat.subTypes[s];
+        if (sub && sub.sizeChart && sub.sizeChart.url) {
+          console.log(`  -> SubType "${sub.name}" SizeChart: ${sub.sizeChart.url}`);
+          const result = await transferMedia(sub.sizeChart.url, sub.sizeChart.public_id, cache, isDryRun, isForce);
+
+          if (result) {
+            if (result.uploaded) totalMediaUploaded++;
+            else if (result.fromCache) totalMediaCached++;
+            else if (result.alreadyMigrated) totalMediaSkipped++;
+
+            if (sub.sizeChart.url !== result.url || sub.sizeChart.public_id !== result.public_id) {
+              console.log(`     Updated: [${result.public_id}]`);
+              sub.sizeChart.url = result.url;
+              sub.sizeChart.public_id = result.public_id;
+              hasChanges = true;
+            } else {
+              console.log(`     Already up to date.`);
             }
+          } else {
+            totalMediaFailed++;
+            console.warn(`     Retaining original SubType SizeChart URL due to transfer error.`);
           }
         }
-
-        // VTO Image
-        if (ci.vtoImage && ci.vtoImage.url) {
-          mediaTasks.push(async () => {
-            totalMediaProcessed++;
-            const result = await transferMedia(ci.vtoImage.url, ci.vtoImage.public_id, cache, isDryRun, isForce);
-            if (result) {
-              if (result.uploaded) {
-                totalMediaUploaded++;
-                prodUploaded++;
-                unsavedOps++;
-              } else if (result.fromCache) {
-                totalMediaCached++;
-                prodCached++;
-              } else if (result.alreadyMigrated) {
-                totalMediaSkipped++;
-                prodSkipped++;
-              }
-
-              if (ci.vtoImage.url !== result.url || ci.vtoImage.public_id !== result.public_id) {
-                ci.vtoImage.url = result.url;
-                ci.vtoImage.public_id = result.public_id;
-                hasChanges = true;
-              }
-            } else {
-              totalMediaFailed++;
-              prodFailed++;
-            }
-          });
-        }
       }
     }
 
-    if (mediaTasks.length > 0) {
-      await runWithConcurrency(mediaTasks, concurrency);
-    }
-
+    // Save changes to database
     if (hasChanges) {
       if (!isDryRun) {
-        await col.updateOne(
-          { _id: product._id },
-          { $set: { colorImages: product.colorImages } }
+        const updateFields = {
+          images: cat.images,
+        };
+        if (cat.sizeChart !== undefined) {
+          updateFields.sizeChart = cat.sizeChart;
+        }
+        if (cat.subTypes !== undefined) {
+          updateFields.subTypes = cat.subTypes;
+        }
+
+        await categoriesCol.updateOne(
+          { _id: cat._id },
+          { $set: updateFields }
         );
-        console.log(
-          `[${itemNum}/${products.length}] SKU: ${sku.padEnd(14)} | "${title}" | Media: ${mediaTasks.length} (Up:${prodUploaded}, Cache:${prodCached}, Skip:${prodSkipped}, Fail:${prodFailed}) -> DB UPDATED`
-        );
+        console.log(`  => Successfully updated category in MongoDB!`);
       } else {
-        console.log(
-          `[${itemNum}/${products.length}] [DRY RUN] SKU: ${sku.padEnd(14)} | "${title}" | Media: ${mediaTasks.length} (Up:${prodUploaded}, Cache:${prodCached}, Skip:${prodSkipped}) -> WOULD UPDATE`
-        );
+        console.log(`  => [DRY RUN] Would update category in MongoDB.`);
       }
-      totalProductsUpdated++;
+      totalCategoriesUpdated++;
     } else {
-      totalProductsSkipped++;
-      console.log(
-        `[${itemNum}/${products.length}] SKU: ${sku.padEnd(14)} | "${title}" | Media: ${mediaTasks.length} -> Up to date (Skipped DB)`
-      );
+      console.log(`  => No database update required for this category.`);
     }
 
+    // Persist cache after each category
     saveCache();
   }
 
-  // Final cache flush
-  saveCache(true);
+  // Final cache write
+  saveCache();
 
   if (mongoose.connection.readyState !== 0) {
     await mongoose.disconnect();
   }
 
   const durationSec = ((Date.now() - startTime) / 1000).toFixed(1);
-  const avgSpeed = durationSec > 0 ? (totalMediaProcessed / durationSec).toFixed(1) : 0;
 
   console.log('\n' + '='.repeat(75));
   console.log('                          MIGRATION SUMMARY                         ');
   console.log('='.repeat(75));
-  console.log(`Total Products Scanned:    ${products.length}`);
-  console.log(`Products Updated in DB:    ${totalProductsUpdated}`);
-  console.log(`Products Already UpToDate: ${totalProductsSkipped}`);
-  console.log(`Total Media Processed:     ${totalMediaProcessed}`);
+  console.log(`Total Categories Scanned:  ${categories.length}`);
+  console.log(`Categories Updated in DB:  ${totalCategoriesUpdated}`);
   console.log(`New Files Uploaded to R2:  ${totalMediaUploaded}`);
   console.log(`Files Loaded from Cache:   ${totalMediaCached}`);
   console.log(`Files Already Migrated:    ${totalMediaSkipped}`);
-  console.log(`Files Failed:              ${totalMediaFailed}`);
-  console.log(`Total Execution Time:      ${durationSec}s (${avgSpeed} items/sec)`);
+  console.log(`Files Failed / Skipped:    ${totalMediaFailed}`);
+  console.log(`Total Execution Time:      ${durationSec}s`);
   console.log('='.repeat(75));
 }
 
